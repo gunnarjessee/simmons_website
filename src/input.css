@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .card {
+        @apply text-center text-teal-600 font-bold text-xl mt-4 underline underline-offset-1;
+    }
+
+    .pop {
+        @apply transition scale-100 hover:duration-700 md:hover:scale-110;
+    }
+
+    .card-holder {
+        @apply grid md:grid-cols-2 sm:grid-rows-2 ml-8 mr-8 w-screen h-64 sm:gap-16 md:gap-16;
+
+    }
+
+}
